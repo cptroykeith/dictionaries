@@ -18,6 +18,7 @@ print(ccc)
 ccc['cwen'] = ccc['cwen'] + 1
 print(ccc)
 '''
+'''
 counts = dict()
 names = ['cwen', 'csev', 'zqian', 'csev', 'cwen']
 for name in names :
@@ -32,3 +33,16 @@ names = ['cwen', 'csev', 'zqian', 'csev', 'cwen']
 for name in names :
     counts[name] = counts.get(name, 0) + 1
 print(counts)
+'''
+#loops
+counts = dict()
+line = input('Enter a line of text:')
+words = line.split()
+
+print('words:', words)
+print('counting...')
+
+for word in words: 
+    counts[words] =counts.get(word,0) + 1
+print('counts', counts)
+
